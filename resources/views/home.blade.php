@@ -6,8 +6,8 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
-                    <h1>Laravel 9 Blog</h1>
-                    <span class="subheading">A Blog built using laravel 9 and bootstrap 5</span>
+                    <h1>Blog Posts</h1>
+                    <span class="subheading">Recent blog posts</span>
                 </div>
             </div>
         </div>
@@ -17,7 +17,8 @@
 <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-md-10 col-lg-8 col-xl-7">
-            <h3>Featured Blogs</h3>
+
+
             @forelse ($posts as $post)
 
             <!-- Post preview-->

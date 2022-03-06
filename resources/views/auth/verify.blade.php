@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+<header class="masthead" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>Email Verification Page</h1>
+                    <span class="subheading">Click the link to verify your mail</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

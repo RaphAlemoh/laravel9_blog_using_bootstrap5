@@ -33,7 +33,12 @@
                                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <label class="form-label" for="form3Example1c">Your Name</label>
-                                            <input type="text" id="form3Example1c" class="form-control" />
+                                            <input type="text" id="form3Example1c" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required />
+                                            @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
                                         </div>
                                     </div>
 
@@ -41,7 +46,13 @@
                                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <label class="form-label" for="form3Example3c">Your Email</label>
-                                            <input type="email" id="form3Example3c" class="form-control" />
+                                            <input type="email" id="form3Example3c" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required />
+
+                                            @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
                                         </div>
                                     </div>
 
@@ -49,7 +60,12 @@
                                         <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <label class="form-label" for="form3Example4c">Password</label>
-                                            <input type="password" id="form3Example4c" class="form-control" />
+                                            <input id="password form3Example4c" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" />
+                                            @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
                                         </div>
                                     </div>
 
@@ -57,7 +73,7 @@
                                         <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <label class="form-label" for="form3Example4cd">Repeat your password</label>
-                                            <input type="password" id="form3Example4cd" class="form-control" />
+                                            <input id="password-confirm form3Example4cd" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" />
                                         </div>
                                     </div>
 
