@@ -27,6 +27,24 @@
                 </ul>
             </div>
             @endif
+
+            <!-- @if (Alert::has('info'))
+            @foreach (Alert::getMessages() as $type => $messages)
+            @foreach ($messages as $message)
+            <div class="alert alert-{{ $type }}">{{ $message }}</div>
+            @endforeach
+            @endforeach
+            @endif -->
+
+
+            <!-- @if (Alert::has('success'))
+            @foreach (Alert::getMessages() as $type => $messages)
+            @foreach ($messages as $message)
+            <div class="alert alert-{{ $type }}">{{ $message }}</div>
+            @endforeach
+            @endforeach
+            @endif -->
+
             @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 <p>{{ $message }}</p>

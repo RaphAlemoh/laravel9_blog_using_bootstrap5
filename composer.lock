@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fc0a11d4d853519016215564ffcba62",
+    "content-hash": "1320acb8ac6f20ac8bb19c9a0b52cf1c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2410,6 +2410,75 @@
                 "source": "https://github.com/antonioribeiro/google2fa/tree/8.0.0"
             },
             "time": "2020-04-05T10:47:18+00:00"
+        },
+        {
+            "name": "prologue/alerts",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prologuephp/alerts.git",
+                "reference": "b2880e28814b8dba8768e60e00511627381efe14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prologuephp/alerts/zipball/b2880e28814b8dba8768e60e00511627381efe14",
+                "reference": "b2880e28814b8dba8768e60e00511627381efe14",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~9",
+                "illuminate/session": "~9",
+                "illuminate/support": "~9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Prologue\\Alerts\\AlertsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Alert": "Prologue\\Alerts\\Facades\\Alert"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Prologue\\Alerts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "email": "dries.vints@gmail.com",
+                    "homepage": "http://driesvints.com",
+                    "role": "Creator"
+                },
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://tabacitu.ro",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Prologue Alerts is a package that handles global site messages.",
+            "keywords": [
+                "alerts",
+                "laravel",
+                "messages"
+            ],
+            "support": {
+                "issues": "https://github.com/prologuephp/alerts/issues",
+                "source": "https://github.com/prologuephp/alerts/tree/1.0.0"
+            },
+            "time": "2022-01-19T09:28:45+00:00"
         },
         {
             "name": "psr/container",

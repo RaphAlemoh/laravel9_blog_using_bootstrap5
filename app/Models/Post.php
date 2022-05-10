@@ -12,7 +12,7 @@ class Post extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'description'
+        'title', 'description', 'user_id'
     ];
 
 
@@ -23,11 +23,11 @@ class Post extends Model
 
 
 
-    public function created_at(): Attribute
-    {
-        return new Attribute(
-            get: fn ($value) => $value->diffForHumans(),
-            // set: fn ($value) => $value,
-        );
-    }
+    // public function created_at(): Attribute
+    // {
+    //     return new Attribute(
+    //         get: fn ($value) => $value->diffForHumans(),
+    //         // set: fn ($value) => $value,
+    //     );
+    // }
 }

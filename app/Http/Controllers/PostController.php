@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Prologue\Alerts\Facades\Alert;
 use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
@@ -48,6 +49,16 @@ class PostController extends Controller
 
         $user->posts()->save($post);
 
+
+        //uncomment the line below to try the prologue package.
+
+        // Alert::add('primary', 'You have successfully published a blog post')->flash();
+
+        // Alert::info('This is the info instance message after creating a blog post')->flash();
+
+        // return redirect()->route('posts.create')->with('alerts', Alert::all());
+
+        //comment the line below to try the prologue package.
         return redirect()->route('posts.create')
                         ->with('success','Post created successfully.');
     }
