@@ -12,7 +12,8 @@
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
-        "prologue/alerts": "^1.0"
+        "prologue/alerts": "^1.0",
+        "spatie/laravel-backup": "^8.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
